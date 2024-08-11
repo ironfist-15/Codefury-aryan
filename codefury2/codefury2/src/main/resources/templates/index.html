@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DisasterAid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #FFDAB9;
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling during animation */
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+            opacity: 0;
+            transform: translateX(-100%);
+            animation: slideIn 1s forwards;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+         .signup-btn {
+            display: inline-block;
+            padding: 15px 30px; /* Adjust size to fit text */
+            font-size: 1.5rem; /* Large font size for readability */
+            color: #333;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: transparent;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.5; /* Center text vertically */
+        }
+        .signup-btn:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .container h1 {
+            font-size: 2.5rem; /* Larger font size for the heading */
+            margin-bottom: 2rem;
+        }
+        .container p {
+            font-size: 1.25rem; /* Slightly larger font size for the paragraph */
+        }
+        .footer {
+            background-color: #cccccc;
+            border-top: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" th:href="@{/register}">Sign-Up/Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+<br /><br />
+<div class="container">
+    <div class="row">
+        <h1>DisasterAid</h1>
+        <br>
+        <p>We provide real-time updates and essential resources during natural disasters, helping you stay informed and prepared. Ensure privacy and also track your current location. Sign up for the full experience. :)</p>
+        <a th:href="@{/register}" class="signup-btn">Sign Up/Login</a>
+    </div>
+</div>
+<footer class="footer">
+    <p>&copy; 2024 DisasterAid. All rights reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

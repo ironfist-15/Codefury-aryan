@@ -1,0 +1,10 @@
+com\codefury\codefury2\UserDto.class
+com\codefury\codefury2\Repositories\UserRepository.class
+com\codefury\codefury2\Repositories\RoleRepository.class
+com\codefury\codefury2\Codefury2Application.class
+com\codefury\codefury2\dbkelsa\UserRole.class
+com\codefury\codefury2\UserRoleId.class
+com\codefury\codefury2\UserService.class
+com\codefury\codefury2\dbkelsa\Role.class
+com\codefury\codefury2\dbkelsa\User.class
+com\codefury\codefury2\UserServiceImpl.class
